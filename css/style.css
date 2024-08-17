@@ -471,6 +471,7 @@ footer {
 .underline {
     opacity: 0;
     margin-left: -100px;
+    transition: 1s;
 }
 .underline.active {
     transition: 1s;
