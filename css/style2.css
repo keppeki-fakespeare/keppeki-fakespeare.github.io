@@ -1,0 +1,7 @@
+#news:before {
+    position: absolute;
+    content: 'NEWS';
+    top: -70px;
+    left: 30px;
+    font-size: 3rem;
+}
