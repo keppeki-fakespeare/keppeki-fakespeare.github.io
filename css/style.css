@@ -209,10 +209,10 @@ nav.menu2 li:hover {
 .line2.active {
     position: fixed;
     background-color: white;
-    width: 1000px;
+    width: 1500px;
     height: 10px;
     display: block;
-    right: -405px;
+    right: -650px;
     bottom: 400px;
     z-index: 3;
     transform: rotate(-90deg);
