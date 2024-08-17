@@ -470,7 +470,7 @@ footer {
 /*----------見出しのcss-----------*/
 .underline {
     opacity: 0;
-    margin-left: 50px;
+    margin-left: -100px;
 }
 .underline.active {
     transition: 1s;
