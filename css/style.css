@@ -473,17 +473,16 @@ footer {
     margin-left: -100px;
     transition: 1s;
 }
+.underline:before {
+    border-bottom: 2px solid;
+    transition: 0.5s;
+ }
 .underline.active {
     transition: 1s;
     opacity: 1;
     margin-left: 0px;
 }
-.underline.active:before {
-    border-bottom: 2px solid;
-    transition: 0.5s;
-    transition-timing-function: ease-out;
-    transition: 1s;
- }
+
 
 #news {
     position: relative;
