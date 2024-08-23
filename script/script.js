@@ -135,6 +135,21 @@ $("nav.menu li:nth-child(6)").click(function () {
 });
 
 $("nav.menu li:nth-child(7)").click(function () {
+  var position = $('#movie').offset().top;
+  window.scrollTo({
+      top: position - 150 ,
+      left: 0,
+      behavior: 'smooth'
+    });
+    $('.openbtn').toggleClass('active');
+    $('.cover').toggleClass('active');
+    $('nav.menu').toggleClass('active');
+    $('.line').toggleClass('active');
+    $('.line2').toggleClass('active');
+    $('.title').toggleClass('active');
+});
+
+$("nav.menu li:nth-child(8)").click(function () {
     var position = $('#special').offset().top;
     window.scrollTo({
         top: position - 150 ,
@@ -149,7 +164,7 @@ $("nav.menu li:nth-child(7)").click(function () {
       $('.title').toggleClass('active');
 });
 
-$("nav.menu li:nth-child(8)").click(function () {
+$("nav.menu li:nth-child(9)").click(function () {
   var position = $('#guide').offset().top;
   window.scrollTo({
       top: position - 150 ,
@@ -222,6 +237,15 @@ $("nav.menu2 li:nth-child(6)").click(function () {
 });
 
 $("nav.menu2 li:nth-child(7)").click(function () {
+  var position = $('#movie').offset().top;
+  window.scrollTo({
+      top: position - 150 ,
+      left: 0,
+      behavior: 'smooth'
+    });
+});
+
+$("nav.menu2 li:nth-child(8)").click(function () {
     var position = $('#special').offset().top;
     window.scrollTo({
         top: position - 150 ,
@@ -230,7 +254,7 @@ $("nav.menu2 li:nth-child(7)").click(function () {
       });
 });
 
-$("nav.menu2 li:nth-child(8)").click(function () {
+$("nav.menu2 li:nth-child(9)").click(function () {
   var position = $('#guide').offset().top;
   window.scrollTo({
       top: position - 150 ,
@@ -238,3 +262,16 @@ $("nav.menu2 li:nth-child(8)").click(function () {
       behavior: 'smooth'
     });
 });
+
+/**-------------------ニュースのスクリプト--------------------*/
+
+$("div#news a:nth-child(1)").click(function () {
+  var position = $('#special').offset().top;
+  window.scrollTo({
+      top: position - 150 ,
+      left: 0,
+      behavior: 'smooth'
+    });
+});
+
+/**--------------------動画スクリプと------------------------- */

@@ -40,12 +40,18 @@ body {
         font-style: normal;
 }
 
-li, #news::before, #story::before, #cast::before, #staff::before, #information::before, #special::before, #guide::before
+li, #news::before, #story::before, #cast::before, #staff::before, #information::before, #movie::before, #special::before, #guide::before
 {
   font-family: "Dela Gothic One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+nav.menu2 li {
+    -webkit-text-stroke: 0.5px #FFF;
+    text-stroke: 0.5px;
+}
+
 
 .cover {
     z-index: -10;
@@ -307,6 +313,10 @@ header {
     clip-path:polygon(0 40%, 100% 0, 100% 100%, 0 100%);
  }
 /*----------------*/
+video {
+    width: 100%;
+}
+/*----------------*/
 
 
 .container {
@@ -324,6 +334,7 @@ footer {
     flex-direction: column;
     border-top: 1px solid black ;
 }
+
 
 /*-------------------*/
 
@@ -435,7 +446,6 @@ footer {
 .info {
     position: relative;
     display: inline-block;
-    width: 30rem;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid;
@@ -444,6 +454,19 @@ footer {
     padding: 15px;
     z-index: 2;
 }
+
+@media screen and (max-width: 720px) {
+    .info {
+        width: 30rem;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .info {
+        width: 50rem;
+    }
+ }
+
 
 .info::after {
    content: ''; /*擬似要素にはcontent, displayの指定が欲しい*/
@@ -557,7 +580,19 @@ footer {
      left: 30px;
      font-size: 3rem;
  }
-
+ #movie {
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+ }
+ 
+ #movie:before {
+     position: absolute;
+     content: 'MOVIE';
+     top: -80px;
+     left: 30px;
+     font-size: 3rem;
+ }
  #special {
     position: relative;
     width: 100%;
