@@ -26,6 +26,27 @@ $(".openbtn").click(function () {
     $('.title').toggleClass('active');
 });
 
+$(".cover3").click(function () {
+  $('.openbtn').toggleClass('invisible');
+  $("#zoom1").addClass('active');
+  $(".flyer1").addClass('active');
+  $(".close").addClass('active');
+});
+$(".cover4").click(function () {
+  $('.openbtn').toggleClass('invisible');
+  $("#zoom2").addClass('active');
+  $(".flyer2").addClass('active');
+  $(".close").addClass('active');
+});
+$(".close").click(function () {
+  $('.openbtn').toggleClass('invisible');
+  $("#zoom1").removeClass('active');
+  $(".flyer1").removeClass('active');
+  $("#zoom2").removeClass('active');
+  $(".flyer2").removeClass('active');
+  $(".close").removeClass('active');
+});
+
 $(window).on('scroll',function(){
 
     $(".underline").each(function(){

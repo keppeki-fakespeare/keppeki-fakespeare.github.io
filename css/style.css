@@ -374,7 +374,7 @@ footer {
 
 
 .wrapper {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding-left: 4%;
     padding-right: 4%;
@@ -399,6 +399,7 @@ footer {
 
 /*---------back の　css---------*/
 #back {
+    transition: 0.5s;
     display: block;
     position: fixed;
     writing-mode: vertical-rl;
@@ -718,11 +719,117 @@ footer {
     visibility: hidden;
   }
 
-
-
-
-
-
-  .del {
+   .del {
     font-size: 1.2rem;
   }
+  /*---------------ビラ------------*/
+  .column {
+    display: flex;
+  }
+  .over {
+    position: relative;
+    margin-top: 2rem;
+    width: 30vw;
+    aspect-ratio: 1076/ 1522;
+  }
+  .over:nth-child(1) {
+    margin-left: auto;
+    margin-right: 4%;
+  }
+  .over:nth-child(2) {
+    margin-right: auto;
+  }  
+  .cover3 {
+    width: 100%;
+    aspect-ratio: 1076/ 1522; 
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+  }
+  @media (hover: hover) {
+    .cover3:hover {
+      opacity: 0.5; /*白色を重ねるだけなら、結局同じ大きさの要素を別に重ねるのが早い*/
+    }
+    }
+
+  .cover4 {
+    width: 100%;
+    aspect-ratio: 1076/ 1522; /*黒字だがOK*/
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+  }
+  @media (hover: hover) {
+  .cover4:hover {
+    opacity: 0.5; /*白色を重ねるだけなら、結局同じ大きさの要素を別に重ねるのが早い*/
+  }
+  }
+
+ .flyer { 
+    width: 100%;
+  }
+ #zoom1, #zoom2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.763);
+    display: none;
+ }
+ #zoom1.active {
+    display: block;
+    z-index: 20;
+ }
+ #zoom2.active {
+    display: block;
+    z-index: 20;
+ }
+ .flyer1, .flyer2 {
+    position: relative;
+    display: none;
+    width: min(80vw, 400px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    z-index: 25;
+ }
+
+ .flyer1.active {
+    display: block;
+ }
+ .flyer2.active {
+    display: block;
+ }
+
+.close {
+    transition: 0.5s;
+    position: fixed;
+    display: none;
+    top: 5vh;
+    right: 0;
+    width: 3rem;
+    height: 6.5rem;
+    background-color: white;
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-size: 2rem;
+    z-index: 10000;
+}
+.close.active {
+    display: block;
+}
+.close:hover {
+    transition: 0.5s;
+    background-color: gray;
+    color: white;
+}
+.openbtn.invisible {
+    opacity: 0;
+}
+ 
+
+ 
