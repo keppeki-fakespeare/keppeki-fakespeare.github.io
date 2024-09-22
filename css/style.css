@@ -675,14 +675,13 @@ footer {
 
 .content {
     font-size: 1.6rem;
-    width: 96%;
+    width: 92%;
     position: relative;
     display: inline-block;
     word-break: break-word;
     top: 5rem;
-    left: 0.5rem;
+    left: 1.6rem;
 }
-
 
 /*------ローディング画面------*/
 
