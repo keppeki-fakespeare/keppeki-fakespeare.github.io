@@ -830,6 +830,17 @@ footer {
 .openbtn.invisible {
     opacity: 0;
 }
- 
+
+/*-------9/22追加分--------*/
+.caption {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.caption:nth-of-type(2) {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
 
  

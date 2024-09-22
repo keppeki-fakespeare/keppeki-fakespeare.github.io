@@ -286,8 +286,8 @@ $("nav.menu2 li:nth-child(9)").click(function () {
 
 /**-------------------ニュースのスクリプト--------------------*/
 
-$("div#news a:nth-child(1)").click(function () {
-  var position = $('#special').offset().top;
+$("div#news a:nth-of-type(1)").click(function () {
+  var position = $('#movie').offset().top;
   window.scrollTo({
       top: position - 150 ,
       left: 0,
@@ -295,4 +295,12 @@ $("div#news a:nth-child(1)").click(function () {
     });
 });
 
+$("div#news a:nth-of-type(4)").click(function () {
+  var position = $('#movie').offset().top;
+  window.scrollTo({
+      top: position - 150 ,
+      left: 0,
+      behavior: 'smooth'
+    });
+});
 /**--------------------動画スクリプと------------------------- */
