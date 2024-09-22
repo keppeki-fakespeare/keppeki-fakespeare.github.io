@@ -660,6 +660,7 @@ footer {
     margin-left: auto; 
     margin-right: auto; 
     margin-bottom: 10rem;
+    padding: 0.5rem;
     border-right: 5px ridge gray;
     border-bottom: 5px ridge gray;
 }
