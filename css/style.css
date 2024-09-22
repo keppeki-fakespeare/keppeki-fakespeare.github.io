@@ -660,7 +660,6 @@ footer {
     margin-left: auto; 
     margin-right: auto; 
     margin-bottom: 10rem;
-    padding: 0.5rem;
     border-right: 5px ridge gray;
     border-bottom: 5px ridge gray;
 }
@@ -676,7 +675,7 @@ footer {
 
 .content {
     font-size: 1.6rem;
-    width: 98%;
+    width: 96%;
     position: relative;
     display: inline-block;
     word-break: break-word;
