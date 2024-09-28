@@ -286,16 +286,7 @@ $("nav.menu2 li:nth-child(9)").click(function () {
 
 /**-------------------ニュースのスクリプト--------------------*/
 
-$("div#news a:nth-of-type(1)").click(function () {
-  var position = $('#movie').offset().top;
-  window.scrollTo({
-      top: position - 150 ,
-      left: 0,
-      behavior: 'smooth'
-    });
-});
-
-$("div#news a:nth-of-type(4)").click(function () {
+$("div#news a:nth-of-type(2)").click(function () {
   var position = $('#movie').offset().top;
   window.scrollTo({
       top: position - 150 ,

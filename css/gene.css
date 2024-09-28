@@ -1,0 +1,41 @@
+.gene {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+.gene:nth-tof-type(1) {
+    opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+.gene {
+    width: 30rem;
+}
+}
+
+@media screen and (min-width: 721px) {
+.gene {
+    width: 50rem;
+}
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#gene:before {
+    text-align: center;
+    display: block;
+    content: 'ゲネ写真';
+    font-size: 2.1rem;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fadeIn {
+    transition: 0.5s;
+    opacity: 1;
+}

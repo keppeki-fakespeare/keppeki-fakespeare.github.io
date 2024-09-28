@@ -444,7 +444,7 @@ footer {
 
  
 /*------infoのcss------*/
-.info {
+.info{
     position: relative;
     display: inline-block;
     margin-left: auto;
@@ -840,6 +840,22 @@ footer {
     display: inline-block;
     margin-top: 2rem;
 }
+/*------------------------*/
+.more {
+    position: relative;
+    display: inline-block;
+}
 
+@media screen and (max-width: 720px) {
+    .more {
+        left: 11rem;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .more {
+        left: 22rem;
+    }
+ }
 
  
