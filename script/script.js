@@ -286,7 +286,7 @@ $("nav.menu2 li:nth-child(9)").click(function () {
 
 /**-------------------ニュースのスクリプト--------------------*/
 
-$("div#news a:nth-of-type(2)").click(function () {
+$("div#news a:nth-of-type(3)").click(function () {
   var position = $('#movie').offset().top;
   window.scrollTo({
       top: position - 150 ,
